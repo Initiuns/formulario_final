@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <link rel="icon" type="image/ico" href="assets/img/right_icone.ico" />
+  <title>Formulário de Dados Cadastrais</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'>
+  <link rel='stylesheet' type='text/css' media='screen' href='css/bootstrap.min.css'>
+  <link rel='stylesheet' type="text/css" media='screen' href='css/alter.css'>
+  <script src='js/bootstrap.min.js'></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <style>
+    body {
+      background: rgb(57, 228, 142);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <form id="forms" action=""name="cadastro" method="post" style="width: 50%; margin: auto;margin-top: 0.5%;color: rgb(57, 228, 142)" class="main-form needs-validation"
+    novalidate>
+
+    <h4 class="display-5">Dados Cadastrais</h4>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="nome">
+      <div class="form-group">
+          <a>
+              <span class="glyphicon glyphicon-user">&#xe008;</span>
+            </a>
+        <label for="nNome">Nome</label>
+        <input type="text" class="form-control" id="nNome validationServer055" aria-describedat="nomeAjuda" placeholder="Digite seu Nome"
+          autocomplete="off" autofocus required>
+        <div class="invalid-feedback">Ops! Esqueceu seu nome.</div>
+        <div class="valid-feedback">Nome legal!</div>
+      </div>
+    </container>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="email">
+      <div class="form-group">
+        <a>
+          <span class="glyphicon">&#x2709;</span>
+        </a>
+          <label for="nEmail">Email</label>
+        <input type="email" class="form-control" id="nEmail" aria-describedat="emailAjuda"
+          placeholder="Digite seu Email" autocomplete="off" required>
+          <div class="invalid-feedback">Falta alguma coisa no seu email.</div>
+          <div class="valid-feedback">Show!</div>
+      </div>
+    </container>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="data-nascimento, cpf">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <span class="
+            glyphicon glyphicon-calendar">&#x1F4C5;</span>
+            <label for="DateN">Data de Nascimento</label>
+            <input type="text" name="DateN" id="DateN" class="form-control date-mask" autocomplete="off"
+              placeholder="Ex: dd/mm/aaaa" required />
+            <div class="invalid-feedback">Data de nascimento inválida</div>
+            <div class="valid-feedback">Show!</div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="form-group">
+              <span class="
+              glyphicon glyphicon-calendar">&#x1F5CE;</span>
+            <label for="cpf">CPF</label>
+            <input type="text" name="cpf" id="cpf" class="form-control cpf-mask" maxlength="11" autocomplete="off"
+              placeholder="Ex: 000.000.000-00" required />
+            <div class="invalid-feedback">CPF inválido</div>
+            <div class="valid-feedback">Show!</div>
+          </div>
+        </div>
+      </div>
+    </container>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="genero">
+
+        <div class="col needs-validation">
+            <label for="genero">Gênero</label>
+  
+            <div class="col">
+            <div class="custom-control custom-radio ">
+                <input type="radio" id="gender" name="customRadio" class="custom-control-input" value="male">
+                <label class="custom-control-label" for="gender">Masculino</label><span class="
+                glyphicon glyphicon-calendar">&#x2642;&#xFE0F;</span>
+              </div>
+            </div>
+            <div class="col">
+              <div class="custom-control custom-radio">
+                <input type="radio" id="gender2" name="customRadio" class="custom-control-input" value="female">
+                <label class="custom-control-label" for="gender2">Feminino</label><span class="
+                glyphicon glyphicon-calendar">&#x2640;&#xFE0F;</span>
+              </div>
+            </div>
+  
+              <div class="invalid-feedback">Selecione um dos gêneros</div>
+            
+          </div>
+
+    </container>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="senha">
+      <div class="row">
+        <div class="col">
+          <div class="form-group">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" id="senha" class="form-control" required minlength="6" placeholder="Digite sua senha" />
+            <small style="color:rgb(57, 228, 142);">No mínimo 6 caracteres </small>
+            <div id="olhinho"><label>segure para visualizar senha</label>
+              <img id="olho" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABDUlEQVQ4jd2SvW3DMBBGbwQVKlyo4BGC4FKFS4+TATKCNxAggkeoSpHSRQbwAB7AA7hQoUKFLH6E2qQQHfgHdpo0yQHX8T3exyPR/ytlQ8kOhgV7FvSx9+xglA3lM3DBgh0LPn/onbJhcQ0bv2SHlgVgQa/suFHVkCg7bm5gzB2OyvjlDFdDcoa19etZMN8Qp7oUDPEM2KFV1ZAQO2zPMBERO7Ra4JQNpRa4K4FDS0R0IdneCbQLb4/zh/c7QdH4NL40tPXrovFpjHQr6PJ6yr5hQV80PiUiIm1OKxZ0LICS8TWvpyyOf2DBQQtcXk8Zi3+JcKfNafVsjZ0WfGgJlZZQxZjdwzX+ykf6u/UF0Fwo5Apfcq8AAAAASUVORK5CYII="
+              />
+           </div>
+            <div class="invalid-feedback">Insira uma senha válida</div>
+            <div class="valid-feedback">Show!</div>
+          </div>
+        </div>
+          <div class="col">
+            <div class="form-group">
+                <label for="confsenha">Confirmação de Senha</label>
+                <input type="password" name="confsenha" id="confsenha" class="form-control" required minlength="6" placeholder="Confirme sua senha" />
+                <div class="invalid-feedback">Insira uma senha válida</div>
+                <div class="valid-feedback">Show!</div>
+            </div>
+          </div>
+      </div>
+    </container>
+
+    <hr style="background-color:rgb(57, 228, 142);"/>
+
+    <container class="botoes">
+      <div class="row justify-content-end">
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <div class="col-auto m-lg-auto">
+            <button type="submit" id="selec" class="btn btn-outline-success vai">Enviar</button>
+          </div>
+          <div class="col-auto m-lg-auto">
+            <button id="cancelar" class="btn btn-outline-danger vai cadastro">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </container>
+  </form>
+
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/validador_cpf.js"></script>
+
+</body>
+
+</html>
